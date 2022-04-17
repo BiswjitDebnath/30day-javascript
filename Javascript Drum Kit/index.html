@@ -31,14 +31,13 @@
     <audio data-key="76" src="./asset/sound/tink.wav"></audio>
     <script>
         function removeTransition(e) {
-                if (e.propertyName != 'transform') return;
-                this.classList.remove('playing');
+            if (!e.target.classList.contains('playing')) return;
+            e.target.classList.remove('playing');
             }
 
         function playing(e) {
                 const audio = document.querySelector('audio[data-key="' + e.keyCode + '"]');
                 const key = document.querySelector('.key[data-key="' + e.keyCode + '"]');
-                console.log(audio);
                 if (!audio) return;
                 audio.currentTime = 0;
                 audio.play();
