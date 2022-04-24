@@ -1,0 +1,31 @@
+.face {
+    border: 6px solid red;
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    top: 17%;
+    left: 32%;
+    display: flex;
+    align-items: center;
+}
+
+.inner {
+    border: 2px solid black;
+    border-radius: 50%;
+    background: black;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    top: 48.6%;
+    left: 48.7%;
+}
+
+.hand {
+    width: 50%;
+    height: 6px;
+    background: black;
+    position: absolute;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+}
